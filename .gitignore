@@ -1,12 +1,21 @@
-*.class
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+import java.util.Scanner
+public class Password
+{
+    public static void main(String[] args)
+    {
+        String pass1 = "";
+        String pass2 = "";
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter password");
+        pass1 = sc.nextLine();
+        System.out.println("Enter again to verify");
+        pass2 = sc.nextLine();
+        if(pass1.equals(pass2))
+        {
+            System.out.println("Verified")
+        }
+        else
+        {
+            System.out.println("Passwords do not match")
+        }
+}
