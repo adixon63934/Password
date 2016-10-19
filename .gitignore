@@ -12,10 +12,10 @@ public class Password
         pass2 = sc.nextLine();
         if(pass1.equals(pass2))
         {
-            System.out.println("Verified")
+            System.out.println("Password verified")
         }
         else
         {
-            System.out.println("Passwords do not match")
+            System.out.println("Passwords do not match!")
         }
 }
